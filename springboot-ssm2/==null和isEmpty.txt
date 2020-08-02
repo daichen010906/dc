@@ -1,0 +1,31 @@
+public void TestConSql() {
+        
+        String a = new String();
+        String b = null;
+        String c = "";
+        if(a == null) {
+            System.out.println("a1");
+        }
+        if(a.isEmpty()) {
+            System.out.println("a2");
+        }
+        if(b == null) {
+            System.out.println("b1");
+        }
+//        if(b.isEmpty()) {
+//            System.out.println("b2");
+//        }
+        if(c == null) {
+            System.out.println("c1");
+        }
+        if(c.isEmpty()) {
+            System.out.println("c2");
+        }
+
+结论 ：
+
+此时a是分配了内存空间，但值为空，是绝对的空，是一种有值（值存在为空而已）
+
+此时b是未分配内存空间，无值，是一种无值(值不存在)
+
+此时c是分配了内存空间，值为空字符串，是相对的空，是一种有值（值存在为空字串）
